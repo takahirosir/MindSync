@@ -76,18 +76,18 @@ class ResearchTopicComposer(object):
         self.researcher_: ResearchAssistant = ResearchAssistant(model)
 
     def get_raw_research_topics(self) -> dict[str,str]:
-    
-        prompt: str = f'''You will return a list of the three most promising potential areas of the proposed cross discipline research projects \
-and topics with bullet points for the following research interests:
+        '''Generate research topics with the USER input (prompt)'''
+        prompt: str = f'''You will return a list of the most promising potential areas of the proposed cross discipline research projects \
+and topics from the bullet points of input thoughts:
 
 {self.research_interests_}
 
-Please be professional, humble and polite. Please do not include people name. \
+Please be professional, humble and polite. \
 Just return the bullet points only, no explanations needed:
 
-1. "a concisive title of the first research topic": a concisive description with 1 sentence for this topic.
-2. "a concisive title of the second research topic": a concisive description with 1 sentence for this topic.
-3. "a concisive title of the third research topic": a concisive description with 1 sentence for this topic.
+1. "a concisive sentence for the thoughts of the first research topic (This is user input)": a concisive description with 1 sentence for this topic.
+2. "a concisive sentence for the thoughts of the first research topic (This is user input)": a concisive description with 1 sentence for this topic.
+3. "a concisive sentence for the thoughts of the first research topic (This is user input)": a concisive description with 1 sentence for this topic.
 ...
 '''
 
