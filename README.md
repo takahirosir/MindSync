@@ -4,7 +4,7 @@ Research Synergy Repository
 
 # Prepare
 1. Dowload python package
-    !pip install -r requirements.txt
+    * !pip install -r requirements.txt
 2. Add openai.api_key
     * Open main.py
     * Modify openai.api_key = 'XXX'
