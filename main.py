@@ -5,7 +5,7 @@ import os
 import arxiv
 import functools
 
-openai.api_key =  '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'
+openai.api_key =  ''
 
 from agents import GeneralAgent
 from paper_class import Paper
